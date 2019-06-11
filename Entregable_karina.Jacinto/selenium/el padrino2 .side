@@ -1,0 +1,96 @@
+{
+  "id": "73918b70-a448-4fd9-9294-021f0c3b7f8f",
+  "version": "2.0",
+  "name": "el padrino2 ",
+  "url": "https://www.imdb.com",
+  "tests": [{
+    "id": "c4af6357-91ab-48ca-bc32-6fee982b6445",
+    "name": "el padrino_2",
+    "commands": [{
+      "id": "39ba1fda-78cd-4973-b8a4-7a5fa5723045",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d74f2a97-95a1-4a4d-b2c8-de1459f2887d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e129a0bd-80d9-4ea2-aa93-b2e4b1929721",
+      "comment": "",
+      "command": "click",
+      "target": "css=#navWatchlistMenu > .downArrow",
+      "targets": [
+        ["css=#navWatchlistMenu > .downArrow", "css:finder"],
+        ["xpath=//li[@id='navWatchlistMenu']/span", "xpath:idRelative"],
+        ["xpath=//li[8]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7076a5ed-f25d-499e-a28a-2cfd6d33372d",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(3) img",
+      "targets": [
+        ["css=li:nth-child(3) img", "css:finder"],
+        ["xpath=(//img[@alt='Add items to your Watchlist'])[3]", "xpath:img"],
+        ["xpath=//ul[@id='navWatchlist']/li[3]/a/img", "xpath:idRelative"],
+        ["xpath=//li[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f99880ce-b49f-4df7-96a1-b354624ede6b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=El padrino: Parte II",
+      "targets": [
+        ["linkText=El padrino: Parte II", "linkText"],
+        ["css=tr:nth-child(3) > .titleColumn > a", "css:finder"],
+        ["xpath=//a[contains(text(),'El padrino: Parte II')]", "xpath:link"],
+        ["xpath=//div[@id='main']/div/span/div/div/div[3]/table/tbody/tr[3]/td[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/title/tt0071562/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=ZT35HXA8NEQ1XZPME482&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_3')])[2]", "xpath:href"],
+        ["xpath=//tr[3]/td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'El padrino: Parte II')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "022714d6-2b64-4a4c-91b9-5c0b263aa7f7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.slate_button",
+      "targets": [
+        ["css=.slate_button", "css:finder"],
+        ["xpath=//div[@id='title-overview-widget']/div/div[3]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/video/imdb/vi696162841?playlistId=tt0071562&ref_=tt_ov_vi')]", "xpath:href"],
+        ["xpath=//div[3]/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef226c55-a0f3-4c89-aa06-a6d9c75f416a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jw-icon-playback",
+      "targets": [
+        ["css=.jw-icon-playback", "css:finder"],
+        ["xpath=//div[@id='imdb-jw-video-1']/div[9]/div[4]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[9]/div[4]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e1de0bc5-6728-46d1-a9d2-5b620b7a658a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c4af6357-91ab-48ca-bc32-6fee982b6445"]
+  }],
+  "urls": ["https://www.imdb.com/"],
+  "plugins": []
+}
